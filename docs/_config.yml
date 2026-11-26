@@ -16,5 +16,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Agent files: llms.txt, llms-full.txt and data/ are copied as static files.
+# SKILL.md is excluded so GitHub Pages doesn't render it to HTML; the deploy
+# workflow copies it raw, and publishes _well-known/ as /.well-known/.
 exclude:
   - _well-known/
+  - SKILL.md

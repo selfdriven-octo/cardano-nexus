@@ -1,0 +1,92 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "cardano.nexus",
+  "description": "A decentralised, permissionless connection layer for the Cardano ecosystem — an open community proposal grounded in the 4Cs (Curious · Caring · Constructive · Chill). This card describes the proposal as published today: plain-text and JSON files an agent can read (llms.txt, llms-full.txt, data/index.json). The platform and its Verified Context Graph are not live yet; skills marked 'Planned' arrive with the MVP. Read access is permissionless.",
+  "url": "https://cardano.nexus/",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "cardano.nexus",
+    "url": "https://cardano.nexus/"
+  },
+  "iconUrl": "https://cardano.nexus/assets/img/nexus-logo.png",
+  "documentationUrl": "https://cardano.nexus/SKILL.md",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "securitySchemes": {},
+  "security": [],
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain", "text/markdown", "application/json"],
+  "supportsAuthenticatedExtendedCard": false,
+  "skills": [
+    {
+      "id": "nexus-overview",
+      "name": "cardano.nexus overview (machine-readable)",
+      "description": "Explain what cardano.nexus is and is not: the 4Cs operating model, seven platform layers, design principles, the five user journeys, the Verified Context Graph, self-governance phases and the MVP feature set. Sources: https://cardano.nexus/llms.txt (short map), https://cardano.nexus/llms-full.txt (all content), https://cardano.nexus/data/index.json (structured, schema at /data/index.schema.json). Status: proposal — describe features as proposed.",
+      "tags": ["cardano", "ecosystem", "4Cs", "llms.txt", "open data", "proposal"],
+      "examples": [
+        "What is cardano.nexus?",
+        "What are the 4Cs?",
+        "What will the cardano.nexus MVP include?"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "text/markdown", "application/json"]
+    },
+    {
+      "id": "treasury-proposal",
+      "name": "cardano.nexus MVP Treasury proposal (draft)",
+      "description": "Answer questions about the draft Treasury Withdrawal that would fund the cardano.nexus MVP: ₳350,000 over about six months in four milestones (M1 Foundations, M2 Directory & Context, M3 Contribution & Trust, M4 API, Learning & Launch), budget by milestone and category, acceptance criteria, success metrics, constitutional alignment and risks. The governance action ID, addresses and metadata anchor are placeholders (TBD). Not financial or legal advice. Source: https://cardano.nexus/treasury-proposal",
+      "tags": ["cardano", "treasury", "governance", "proposal", "budget", "milestones"],
+      "examples": [
+        "How much is the cardano.nexus treasury proposal asking for?",
+        "What are the acceptance criteria for milestone M2?",
+        "How is the budget split by category?"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "text/markdown", "application/json"]
+    },
+    {
+      "id": "governance-context",
+      "name": "Governance Context",
+      "description": "Explain Cardano governance in context: the seven governance action types and which bodies ratify each (DReps, SPOs, Constitutional Committee), the propose → discuss → vote → ratify → enact lifecycle, and the proposed gov.cardano.nexus layer and roadmap. Never advises how to vote. Planned: live, per-action context pages (summaries, constitutional sections, DRep rationales, timelines). Source: https://cardano.nexus/governance",
+      "tags": ["cardano", "governance", "CIP-1694", "DRep", "SPO", "constitutional committee", "chill"],
+      "examples": [
+        "Who ratifies a treasury withdrawal?",
+        "What are the steps from a governance proposal to enactment?",
+        "What will gov.cardano.nexus do?"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "text/markdown"]
+    },
+    {
+      "id": "ecosystem-discovery",
+      "name": "Ecosystem Discovery (planned)",
+      "description": "Planned for the MVP, not yet available: find projects, people, tools, standards and communities — who is building what, and where help is needed. Until it is live, point developers to https://cardano.build for Cardano tools, SDKs and infrastructure.",
+      "tags": ["planned", "discovery", "directory", "curious"],
+      "examples": ["Which projects work on decentralised identity?"]
+    },
+    {
+      "id": "contribution-matching",
+      "name": "Contribution Matching (planned)",
+      "description": "Planned for the MVP, not yet available: surface open tasks, bounties and collaboration requests — recognising far more than code.",
+      "tags": ["planned", "contribution", "bounties", "constructive"],
+      "examples": ["What open tasks match a Plutus developer?"]
+    },
+    {
+      "id": "learning-pathways",
+      "name": "Learning Pathways (planned)",
+      "description": "Planned for the MVP, not yet available: role-based onboarding, beginner pathways, governance education and a navigable glossary.",
+      "tags": ["planned", "learning", "onboarding", "caring"],
+      "examples": ["I'm new to Cardano — where do I begin?"]
+    },
+    {
+      "id": "verified-context-graph",
+      "name": "Context Graph Query (planned)",
+      "description": "Planned for the MVP, not yet available: query ecosystem memory — dependencies, contributors, what funded a piece of work, the debates that shaped a decision — with answers linked to signed claims and evidence.",
+      "tags": ["planned", "knowledge graph", "verifiable claims", "provenance"],
+      "examples": ["Which tools depend on this library?"]
+    }
+  ]
+}

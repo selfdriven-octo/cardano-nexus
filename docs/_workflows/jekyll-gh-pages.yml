@@ -23,6 +23,10 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
+      # Fail if llms.txt / llms-full.txt are out of sync with docs/data/index.json
+      - name: Check agent files
+        run: node docs/_scripts/build-agent-files.mjs --check
+
       # Build theme-only Jekyll site from /docs
       - name: Build with GitHub Pages Jekyll
         uses: actions/jekyll-build-pages@v1
@@ -40,6 +44,10 @@ jobs:
           mkdir -p ./_site/.well-known
           if [ -d "./docs/_well-known" ]; then
             cp -r ./docs/_well-known/* ./_site/.well-known/
+          fi
+          # SKILL.md is excluded from Jekyll so it is served raw, not rendered
+          if [ -f "./docs/SKILL.md" ]; then
+            cp ./docs/SKILL.md ./_site/SKILL.md
           fi
 
       # Zip skills folders and copy to .well-known

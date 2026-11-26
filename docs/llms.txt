@@ -1,0 +1,71 @@
+# cardano.nexus
+
+> A decentralised, permissionless connection layer for the Cardano ecosystem — a shared civic space where builders, projects, educators, SPOs, governance participants and communities discover each other and build trust over time. Grounded in the 4Cs: Curious · Caring · Constructive · Chill.
+
+Status: cardano.nexus is an open community proposal. The platform described here is not live yet: its Minimum Viable Version is the subject of a draft Cardano Treasury proposal. Describe features as proposed or planned unless a section says otherwise.
+
+Version 1.0.0 · updated 2026-11-27
+
+## Machine-readable
+
+- [llms.txt](https://cardano.nexus/llms.txt): this short map
+- [llms-full.txt](https://cardano.nexus/llms-full.txt): all content in one plain-text file
+- [data/index.json](https://cardano.nexus/data/index.json): structured source of truth (schema: https://cardano.nexus/data/index.schema.json)
+- [.well-known/agent.json](https://cardano.nexus/.well-known/agent.json): A2A AgentCard
+- [SKILL.md](https://cardano.nexus/SKILL.md): agent skill — how to use and answer from these files
+
+## Pages
+
+- [cardano.nexus — A Place Where the Cardano Ecosystem Connects](https://cardano.nexus/): The full vision: what cardano.nexus is and is not, the 4Cs, seven platform layers, design principles, use cases, the Verified Context Graph, AI agents, self-governance and the MVP.
+- [gov.cardano.nexus — Cardano governance, in context](https://cardano.nexus/governance): The proposed governance layer: connecting the people, proposals and reasoning of Cardano on-chain governance, and helping the ecosystem establish a shared roadmap.
+- [Funding the cardano.nexus MVP — Cardano Treasury proposal (draft)](https://cardano.nexus/treasury-proposal): A draft Treasury Withdrawal request for ₳350,000 to deliver the cardano.nexus MVP over about six months in four milestones, open-source and evidenced on-chain.
+
+## cardano.nexus — sections
+
+- [Not a directory. Not a gatekeeper. A nexus.](https://cardano.nexus/#what)
+- [The 4Cs — the human operating model](https://cardano.nexus/#fourcs)
+- [Seven connected layers](https://cardano.nexus/#layers)
+- [Design principles — built on Cardano's own values](https://cardano.nexus/#principles)
+- [Who it's for](https://cardano.nexus/#usecases)
+- [The Verified Context Graph — ecosystem memory](https://cardano.nexus/#graph)
+- [An open substrate for AI agents](https://cardano.nexus/#agents)
+- [How cardano.nexus governs itself](https://cardano.nexus/#governance)
+- [A useful first version (MVP)](https://cardano.nexus/#mvp)
+
+## gov.cardano.nexus — sections
+
+- [Why governance needs context — on-chain power, off-chain confusion](https://cardano.nexus/governance#why)
+- [What the governance layer connects](https://cardano.nexus/governance#connect)
+- [Understand any governance action](https://cardano.nexus/governance#understand)
+- [Who ratifies what — Cardano's seven governance action types](https://cardano.nexus/governance#types)
+- [From idea to enactment — the governance action lifecycle](https://cardano.nexus/governance#lifecycle)
+- [Establishing a shared governance roadmap](https://cardano.nexus/governance#roadmap)
+- [Find the people of governance](https://cardano.nexus/governance#participants)
+- [Governance memory — so the ecosystem remembers](https://cardano.nexus/governance#memory)
+
+## Funding the cardano.nexus MVP — sections
+
+- [Treasury proposal at a glance (draft)](https://cardano.nexus/treasury-proposal)
+- [What the proposal funds](https://cardano.nexus/treasury-proposal#summary)
+- [The problem it addresses](https://cardano.nexus/treasury-proposal#need)
+- [MVP scope by milestone](https://cardano.nexus/treasury-proposal#scope)
+- [Budget](https://cardano.nexus/treasury-proposal#budget)
+- [Milestones & timeline](https://cardano.nexus/treasury-proposal#milestones)
+- [Success metrics](https://cardano.nexus/treasury-proposal#metrics)
+- [Constitutional alignment — why it fits Cardano](https://cardano.nexus/treasury-proposal#alignment)
+- [Risks & mitigations](https://cardano.nexus/treasury-proposal#risks)
+- [The ask](https://cardano.nexus/treasury-proposal#ask)
+
+## Guidance for agents
+
+- cardano.nexus is a proposal. Say 'proposed' or 'planned' for platform features; do not describe them as live.
+- Never advise anyone how to vote on a governance action. Summarise, give context and point to sources — the community decides.
+- Treasury figures are the proposer's draft for community review. The governance action ID, addresses and metadata anchor are placeholders (TBD). Nothing here is financial or legal advice.
+- cardano.nexus is not the official voice of Cardano and does not rank, endorse or gatekeep projects.
+- For developer tools, SDKs and infrastructure, point people to cardano.build.
+- Prefer this file and llms-full.txt over scraping the HTML. Link people to the page URL with its #anchor.
+
+## Related
+
+- [cardano.build](https://cardano.build): Open, community-curated index of resources for building on Cardano — languages, SDKs, APIs, infrastructure and learning.
+- [selfdriven.you](https://selfdriven.you): The 4Cs — Curious, Caring, Constructive, Chill.

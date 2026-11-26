@@ -1,0 +1,1313 @@
+{
+  "$schema": "https://cardano.nexus/data/index.schema.json",
+  "name": "cardano.nexus",
+  "title": "cardano.nexus — A Place Where the Cardano Ecosystem Connects",
+  "description": "A decentralised, permissionless connection layer for the Cardano ecosystem — a shared civic space where builders, projects, educators, SPOs, governance participants and communities discover each other and build trust over time. Grounded in the 4Cs: Curious · Caring · Constructive · Chill.",
+  "version": "1.0.0",
+  "updated": "2026-11-27",
+  "status": "proposal",
+  "status_note": "cardano.nexus is an open community proposal. The platform described here is not live yet: its Minimum Viable Version is the subject of a draft Cardano Treasury proposal. Describe features as proposed or planned unless a section says otherwise.",
+  "homepage": "https://cardano.nexus/",
+  "repository": "https://github.com/selfdriven-services/selfdriven-nexus",
+  "attribution": {
+    "supported_by": {
+      "name": "selfdriven Foundation",
+      "url": "https://selfdriven.foundation"
+    },
+    "initiated_by": {
+      "name": "selfdrivenOcto",
+      "desc": "an octonomous 4Cs Autonomous Silicon Intelligence Being",
+      "url": "https://octonomous.io"
+    },
+    "powered_by": {
+      "name": "selfdriven.nexus",
+      "url": "https://selfdriven.nexus"
+    }
+  },
+  "agent_guidance": [
+    "cardano.nexus is a proposal. Say 'proposed' or 'planned' for platform features; do not describe them as live.",
+    "Never advise anyone how to vote on a governance action. Summarise, give context and point to sources — the community decides.",
+    "Treasury figures are the proposer's draft for community review. The governance action ID, addresses and metadata anchor are placeholders (TBD). Nothing here is financial or legal advice.",
+    "cardano.nexus is not the official voice of Cardano and does not rank, endorse or gatekeep projects.",
+    "For developer tools, SDKs and infrastructure, point people to cardano.build.",
+    "Prefer this file and llms-full.txt over scraping the HTML. Link people to the page URL with its #anchor."
+  ],
+  "endpoints": {
+    "html": "https://cardano.nexus/",
+    "governance": "https://cardano.nexus/governance",
+    "treasury_proposal": "https://cardano.nexus/treasury-proposal",
+    "llms": "https://cardano.nexus/llms.txt",
+    "llms_full": "https://cardano.nexus/llms-full.txt",
+    "index": "https://cardano.nexus/data/index.json",
+    "schema": "https://cardano.nexus/data/index.schema.json",
+    "agent_card": "https://cardano.nexus/.well-known/agent.json",
+    "skill": "https://cardano.nexus/SKILL.md"
+  },
+  "related": [
+    {
+      "name": "cardano.build",
+      "url": "https://cardano.build",
+      "desc": "Open, community-curated index of resources for building on Cardano — languages, SDKs, APIs, infrastructure and learning."
+    },
+    {
+      "name": "selfdriven.you",
+      "url": "https://selfdriven.you",
+      "desc": "The 4Cs — Curious, Caring, Constructive, Chill."
+    }
+  ],
+  "stats": {
+    "pages": 3,
+    "sections": 27,
+    "items": 168
+  },
+  "pages": [
+    {
+      "id": "home",
+      "path": "/",
+      "url": "https://cardano.nexus/",
+      "title": "cardano.nexus — A Place Where the Cardano Ecosystem Connects",
+      "summary": "The full vision: what cardano.nexus is and is not, the 4Cs, seven platform layers, design principles, use cases, the Verified Context Graph, AI agents, self-governance and the MVP."
+    },
+    {
+      "id": "governance",
+      "path": "/governance",
+      "url": "https://cardano.nexus/governance",
+      "title": "gov.cardano.nexus — Cardano governance, in context",
+      "summary": "The proposed governance layer: connecting the people, proposals and reasoning of Cardano on-chain governance, and helping the ecosystem establish a shared roadmap."
+    },
+    {
+      "id": "treasury-proposal",
+      "path": "/treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal",
+      "title": "Funding the cardano.nexus MVP — Cardano Treasury proposal (draft)",
+      "summary": "A draft Treasury Withdrawal request for ₳350,000 to deliver the cardano.nexus MVP over about six months in four milestones, open-source and evidenced on-chain."
+    }
+  ],
+  "sections": [
+    {
+      "id": "what",
+      "page": "home",
+      "url": "https://cardano.nexus/#what",
+      "title": "Not a directory. Not a gatekeeper. A nexus.",
+      "summary": "Cardano already has the technical foundation. What's still emerging is the human, social and contextual layer that helps the ecosystem see itself clearly — and coordinate without becoming centralised.",
+      "groups": [
+        {
+          "title": "What it is",
+          "items": [
+            {
+              "name": "A shared connective layer",
+              "desc": "A layer the ecosystem can link itself together with."
+            },
+            {
+              "name": "A community-maintained graph of ecosystem context",
+              "desc": "Checked, linked, improved."
+            },
+            {
+              "name": "Infrastructure you can trust without trusting a single owner"
+            },
+            {
+              "name": "Part directory, part knowledge graph, part civic commons"
+            }
+          ]
+        },
+        {
+          "title": "What it is not",
+          "items": [
+            {
+              "name": "Not the official voice of Cardano, or a central authority"
+            },
+            {
+              "name": "Not a marketing directory or a popularity contest"
+            },
+            {
+              "name": "Not a place where visibility is purchased"
+            },
+            {
+              "name": "Not a platform that decides who belongs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fourcs",
+      "page": "home",
+      "url": "https://cardano.nexus/#fourcs",
+      "title": "The 4Cs — the human operating model",
+      "summary": "Technology alone won't make the ecosystem coherent. The 4Cs are operating modes, each answering a different ecosystem need. Each mode balances the others.",
+      "groups": [
+        {
+          "title": "Modes",
+          "items": [
+            {
+              "id": "curious",
+              "name": "Curious",
+              "essence": "explore · ask · learn",
+              "desc": "Discovery, learning and open questions. Curiosity prevents stagnation and makes space for new builders, ideas and collaborations — built into the information architecture through ecosystem maps, role-based pathways, 'start here' journeys and open research questions.",
+              "tags": [
+                "ecosystem maps",
+                "learning journeys",
+                "project discovery",
+                "open problems"
+              ]
+            },
+            {
+              "id": "caring",
+              "name": "Caring",
+              "essence": "listen · hold space",
+              "desc": "Trust, stewardship and shared spaces. Care turns open participation into trusted participation: treating people as humans, not just wallets, votes or users — transparent histories, verifiable claims, anti-impersonation, recognition of invisible work.",
+              "tags": [
+                "trust signals",
+                "stewardship roles",
+                "verifiable claims",
+                "newcomer safety"
+              ]
+            },
+            {
+              "id": "constructive",
+              "name": "Constructive",
+              "essence": "build · ship · move",
+              "desc": "Building, contributing and reducing friction. Cardano is built by contribution — technical, educational, social, operational, local. Constructiveness is measured by usefulness, not visibility.",
+              "tags": [
+                "open tasks",
+                "help-wanted signals",
+                "proposal → outcome",
+                "contribution credentials"
+              ]
+            },
+            {
+              "id": "chill",
+              "name": "Chill",
+              "essence": "pause · breathe · reset",
+              "desc": "Sustainability, coherence and anti-burnout. Designing against urgency addiction, hype cycles and social exhaustion. Informed governance requires time, context and reflection — a frantic ecosystem cannot govern wisely.",
+              "tags": [
+                "durable knowledge",
+                "what-changed views",
+                "async participation",
+                "ecosystem memory"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "A living rhythm",
+          "items": [
+            {
+              "name": "Discover what exists",
+              "desc": "Curiosity opens the ecosystem and keeps it learning."
+            },
+            {
+              "name": "Understand what can be trusted",
+              "desc": "Caring humanises participation and protects shared spaces."
+            },
+            {
+              "name": "Contribute to what matters",
+              "desc": "Constructiveness turns observation into shipped outcomes."
+            },
+            {
+              "name": "Sustain participation over time",
+              "desc": "Chill keeps the ecosystem coherent as complexity grows."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layers",
+      "page": "home",
+      "url": "https://cardano.nexus/#layers",
+      "title": "Seven connected layers",
+      "summary": "The proposed architecture: seven connected layers, each built on open standards, portable identity and interoperable data.",
+      "groups": [
+        {
+          "items": [
+            {
+              "id": "identity",
+              "name": "Identity",
+              "desc": "People, projects, orgs, communities and tools represent themselves — with self-expression and verification, not a single forced identity model.",
+              "tags": [
+                "wallet profiles",
+                "DIDs",
+                "governance creds"
+              ]
+            },
+            {
+              "id": "context",
+              "name": "Context",
+              "desc": "A shared graph of ecosystem knowledge — descriptions, dependencies, contributors, funding, roadmaps, relationships.",
+              "tags": [
+                "categories",
+                "dependencies",
+                "milestones"
+              ]
+            },
+            {
+              "id": "contribution",
+              "name": "Contribution",
+              "desc": "Makes useful work discoverable and recognisable — far more than code: docs, translations, events, governance rationales, maintenance.",
+              "tags": [
+                "open tasks",
+                "delivery evidence",
+                "bounties"
+              ]
+            },
+            {
+              "id": "trust",
+              "name": "Trust",
+              "desc": "Represents trust without centralising authority. Plural and contextual: a dev trusted for code, a teacher for resources, a DRep for governance reasoning.",
+              "tags": [
+                "signed claims",
+                "attestations",
+                "provenance"
+              ]
+            },
+            {
+              "id": "governance-layer",
+              "name": "Governance",
+              "desc": "Connects ecosystem participation with Cardano governance. It doesn't tell people how to vote — it helps them understand what they're voting on.",
+              "tags": [
+                "DRep profiles",
+                "rationale archives",
+                "treasury tracking"
+              ]
+            },
+            {
+              "id": "learning",
+              "name": "Learning",
+              "desc": "Turns a complex ecosystem into a navigable one — beginner pathways, role-based onboarding, governance education, an ecosystem glossary.",
+              "tags": [
+                "onboarding",
+                "role pathways",
+                "glossary"
+              ]
+            },
+            {
+              "id": "api-data",
+              "name": "API & Data",
+              "desc": "Open, interoperable interfaces so others can build on top. Knowledge stays portable — it isn't trapped inside one platform.",
+              "tags": [
+                "public APIs",
+                "open schemas",
+                "signed feeds"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "principles",
+      "page": "home",
+      "url": "https://cardano.nexus/#principles",
+      "title": "Design principles — built on Cardano's own values",
+      "summary": "A Cardano connection layer should inherit the values of Cardano itself — open participation, verifiable contribution, self-sovereign identity, community stewardship.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Permissionless",
+              "desc": "Anyone can participate, create, connect and contribute."
+            },
+            {
+              "name": "Verifiable context",
+              "desc": "Claims linked to evidence wherever possible."
+            },
+            {
+              "name": "Plural trust",
+              "desc": "Trust is contextual — never one central rating."
+            },
+            {
+              "name": "Community stewardship",
+              "desc": "Shared spaces get care, maintenance and transparent governance."
+            },
+            {
+              "name": "Open data",
+              "desc": "The ecosystem graph stays portable and reusable."
+            },
+            {
+              "name": "Local autonomy",
+              "desc": "Regional and thematic communities keep their own views."
+            },
+            {
+              "name": "Human-centred",
+              "desc": "The platform serves people — it doesn't extract their attention."
+            },
+            {
+              "name": "Calm coordination",
+              "desc": "Reduce noise, urgency and fragmentation."
+            },
+            {
+              "name": "Recognition",
+              "desc": "Useful work becomes visible — including quiet, non-technical work."
+            },
+            {
+              "name": "Forkable & resilient",
+              "desc": "No single operator can permanently capture shared context."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usecases",
+      "page": "home",
+      "url": "https://cardano.nexus/#usecases",
+      "title": "Who it's for",
+      "summary": "From confusion to contribution. From reaction to informed judgement. Five journeys through the nexus.",
+      "groups": [
+        {
+          "items": [
+            {
+              "id": "new-builder",
+              "name": "New Builder",
+              "role": "Developer",
+              "desc": "Arriving to build a dApp — the builder moves from confusion to contribution.",
+              "covers": [
+                "Builder onboarding guides, wallets & SDKs",
+                "Smart-contract tools and example projects",
+                "Open-source repos, mentors, developer communities",
+                "Funding pathways and security resources"
+              ],
+              "links": [
+                {
+                  "label": "Start building on Cardano · cardano.build",
+                  "url": "https://cardano.build"
+                }
+              ]
+            },
+            {
+              "id": "governance-participant",
+              "name": "Governance Participant",
+              "role": "ADA holder",
+              "desc": "Understanding a governance action — the voter moves from reaction to informed judgement.",
+              "covers": [
+                "Plain-language summaries of the action",
+                "Relevant constitutional sections & DRep rationales",
+                "Risk analysis, voting timelines, historical context",
+                "Proposal dependencies and community discussion"
+              ],
+              "links": [
+                {
+                  "label": "gov.cardano.nexus",
+                  "url": "https://cardano.nexus/governance"
+                }
+              ]
+            },
+            {
+              "id": "project-team",
+              "name": "Project Team",
+              "role": "Project",
+              "desc": "Discoverable without the algorithm — the project becomes easier to find, assess and support.",
+              "covers": [
+                "A project profile with team and repo links",
+                "Roadmap, documentation, contribution needs",
+                "Funding history and governance links",
+                "Updates and verifiable claims"
+              ]
+            },
+            {
+              "id": "local-community",
+              "name": "Local Community",
+              "role": "Regional group",
+              "desc": "Local, connected globally — part of the global ecosystem without losing its own identity.",
+              "covers": [
+                "Local community pages and event listings",
+                "Local project maps and organiser profiles",
+                "Regional governance activity, local-language resources",
+                "Partnership opportunities"
+              ]
+            },
+            {
+              "id": "educator",
+              "name": "Educator",
+              "role": "Educator",
+              "desc": "Teaching, ecosystem-connected — from isolated content creation to ecosystem-connected learning.",
+              "covers": [
+                "Learning resources and project examples",
+                "Glossary terms and curriculum pathways",
+                "Community experts and student project ideas",
+                "Verifiable learning credentials"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "graph",
+      "page": "home",
+      "url": "https://cardano.nexus/#graph",
+      "title": "The Verified Context Graph — ecosystem memory",
+      "summary": "Ecosystems forget — who contributed, why decisions were made, what was already tried. cardano.nexus proposes to help Cardano remember through linked, verifiable, community-maintained context. AI assists the ecosystem; it doesn't replace its judgement.",
+      "groups": [
+        {
+          "title": "Questions the graph is designed to answer",
+          "items": [
+            {
+              "name": "What projects are active in identity?"
+            },
+            {
+              "name": "Which tools depend on which libraries?"
+            },
+            {
+              "name": "Who contributed to this standard?"
+            },
+            {
+              "name": "What proposals funded this work?"
+            },
+            {
+              "name": "Which governance debates shaped this decision?"
+            },
+            {
+              "name": "What knowledge should be preserved?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "page": "home",
+      "url": "https://cardano.nexus/#agents",
+      "title": "An open substrate for AI agents",
+      "summary": "cardano.nexus proposes to expose its Verified Context Graph to agents through an open A2A Protocol AgentCard, so agents assist the ecosystem instead of guessing about it. Read access is permissionless; agents assist discovery but never decide who belongs or how to vote. The five graph-backed skills below are planned for the MVP — today the agent files describe the proposal itself.",
+      "groups": [
+        {
+          "title": "Planned agent skills",
+          "items": [
+            {
+              "id": "ecosystem-discovery",
+              "name": "Ecosystem Discovery",
+              "mode": "curious",
+              "status": "planned",
+              "desc": "Find projects, people, tools, standards and communities. Who is building what, and where help is needed.",
+              "example": "Which projects work on decentralised identity?"
+            },
+            {
+              "id": "governance-context",
+              "name": "Governance Context",
+              "mode": "chill",
+              "status": "planned",
+              "desc": "Plain-language summaries, constitutional sections, DRep rationales and timelines. Never advises how to vote.",
+              "example": "Summarise this governance action in plain terms."
+            },
+            {
+              "id": "contribution-matching",
+              "name": "Contribution Matching",
+              "mode": "constructive",
+              "status": "planned",
+              "desc": "Surface open tasks, bounties and collaboration requests — recognising far more than code.",
+              "example": "What open tasks match a Plutus developer?"
+            },
+            {
+              "id": "learning-pathways",
+              "name": "Learning Pathways",
+              "mode": "caring",
+              "status": "planned",
+              "desc": "Role-based onboarding, beginner pathways, governance education and a navigable glossary.",
+              "example": "I'm new to Cardano — where do I begin?"
+            },
+            {
+              "id": "verified-context-graph",
+              "name": "Context Graph Query",
+              "mode": "cardano",
+              "status": "planned",
+              "desc": "Query ecosystem memory: dependencies, contributors, what funded a piece of work, the debates that shaped a decision.",
+              "example": "Which tools depend on this library?"
+            }
+          ]
+        },
+        {
+          "title": "Agent principles",
+          "items": [
+            {
+              "name": "Discoverable",
+              "desc": "A standard AgentCard at a standard path, no bespoke integration."
+            },
+            {
+              "name": "Verifiable",
+              "desc": "Answers link back to signed claims and evidence in the graph."
+            },
+            {
+              "name": "Portable",
+              "desc": "Open schemas mean knowledge is never trapped in one platform."
+            },
+            {
+              "name": "Bounded",
+              "desc": "Agents assist discovery; they never decide who belongs or how to vote."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "self-governance",
+      "page": "home",
+      "url": "https://cardano.nexus/#governance",
+      "title": "How cardano.nexus governs itself",
+      "summary": "To serve a decentralised ecosystem, cardano.nexus should itself evolve toward decentralised governance. Start useful. Become trusted. Open the structure. Share the power.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Phase 1 — Stewarded Launch",
+              "desc": "A small founding team establishes the initial platform, principles, schemas and prototype."
+            },
+            {
+              "name": "Phase 2 — Community Contribution",
+              "desc": "Projects, communities and contributors begin adding profiles, context, resources and links."
+            },
+            {
+              "name": "Phase 3 — Stewardship Council",
+              "desc": "A diverse stewardship group helps maintain quality, resolve disputes and guide evolution."
+            },
+            {
+              "name": "Phase 4 — Open Governance",
+              "desc": "Governance mechanisms become more formal, transparent and community-driven."
+            },
+            {
+              "name": "Phase 5 — Protocolisation",
+              "desc": "Core schemas, APIs and data structures become open standards that others can use, fork, mirror and extend."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mvp",
+      "page": "home",
+      "url": "https://cardano.nexus/#mvp",
+      "title": "A useful first version (MVP)",
+      "summary": "The first version needs to create a useful place for connection. The early test: can someone arrive at cardano.nexus and understand the ecosystem better than before?",
+      "groups": [
+        {
+          "title": "MVP features (proposed)",
+          "items": [
+            {
+              "name": "Ecosystem project directory"
+            },
+            {
+              "name": "People & org profiles"
+            },
+            {
+              "name": "Category & tag system"
+            },
+            {
+              "name": "DRep directory"
+            },
+            {
+              "name": "SPO directory"
+            },
+            {
+              "name": "Learning resource library"
+            },
+            {
+              "name": "Project update feed"
+            },
+            {
+              "name": "Contribution needs board"
+            },
+            {
+              "name": "Verified domain links"
+            },
+            {
+              "name": "Wallet sign-in"
+            },
+            {
+              "name": "Public API"
+            },
+            {
+              "name": "Trust & verification signals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gov-why",
+      "page": "governance",
+      "url": "https://cardano.nexus/governance#why",
+      "title": "Why governance needs context — on-chain power, off-chain confusion",
+      "summary": "Conway-era governance gave ADA holders real on-chain power, but the context needed to use it well is scattered across forums, portals, threads and PDFs.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Governance actions are hard to understand without deep technical context"
+            },
+            {
+              "name": "DRep rationales are scattered and rarely preserved"
+            },
+            {
+              "name": "Voters react to timelines instead of reasoning from evidence"
+            },
+            {
+              "name": "Constitutional context is hard to connect to live actions"
+            },
+            {
+              "name": "Proposal dependencies and history are easily lost"
+            },
+            {
+              "name": "Treasury outcomes are rarely linked back to delivery"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gov-connect",
+      "page": "governance",
+      "url": "https://cardano.nexus/governance#connect",
+      "title": "What the governance layer connects",
+      "summary": "Every governance role, document and decision, linked into one shared, verifiable context graph — neutral, and owned by no single operator.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "ADA holders",
+              "desc": "Delegate voting power or vote directly; the source of legitimacy."
+            },
+            {
+              "name": "DReps",
+              "desc": "Delegated representatives — profiles, rationales and voting history."
+            },
+            {
+              "name": "SPOs",
+              "desc": "Stake pool operators voting on the actions that require them."
+            },
+            {
+              "name": "Constitutional Committee",
+              "desc": "Checks each action against the Constitution."
+            },
+            {
+              "name": "Proposals & rationales",
+              "desc": "Actions, summaries, dependencies and the reasoning behind votes."
+            },
+            {
+              "name": "Constitution & treasury",
+              "desc": "Guardrails, constitutional sections, and treasury-to-delivery evidence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gov-understand",
+      "page": "governance",
+      "url": "https://cardano.nexus/governance#understand",
+      "title": "Understand any governance action",
+      "summary": "Each action is to get a context page that assembles the reasoning a voter needs — without ever telling anyone how to vote. (The example vote figures on the page are illustrative, not real.)",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Plain-language summary",
+              "desc": "What the action does, in human terms."
+            },
+            {
+              "name": "Constitutional context",
+              "desc": "The relevant sections and guardrails."
+            },
+            {
+              "name": "DRep rationales",
+              "desc": "The reasoning behind positions, preserved."
+            },
+            {
+              "name": "Risk analysis",
+              "desc": "What could go wrong, and for whom."
+            },
+            {
+              "name": "Voting timeline",
+              "desc": "The epoch window, clearly shown."
+            },
+            {
+              "name": "Dependencies & history",
+              "desc": "What this builds on, and what came before."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gov-types",
+      "page": "governance",
+      "url": "https://cardano.nexus/governance#types",
+      "title": "Who ratifies what — Cardano's seven governance action types",
+      "summary": "Each governance action type requires a different combination of voting bodies: DReps, SPOs and the Constitutional Committee.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Motion of no-confidence",
+              "dreps": "yes",
+              "spos": "yes",
+              "constitutional_committee": "no"
+            },
+            {
+              "name": "Update the Constitutional Committee / thresholds",
+              "dreps": "yes",
+              "spos": "yes",
+              "constitutional_committee": "no"
+            },
+            {
+              "name": "Update the Constitution",
+              "dreps": "yes",
+              "spos": "no",
+              "constitutional_committee": "yes"
+            },
+            {
+              "name": "Hard-fork initiation",
+              "dreps": "yes",
+              "spos": "yes",
+              "constitutional_committee": "yes"
+            },
+            {
+              "name": "Protocol parameter change",
+              "dreps": "yes",
+              "spos": "security parameters only",
+              "constitutional_committee": "yes"
+            },
+            {
+              "name": "Treasury withdrawal",
+              "dreps": "yes",
+              "spos": "no",
+              "constitutional_committee": "yes"
+            },
+            {
+              "name": "Info action",
+              "desc": "No on-chain effect.",
+              "dreps": "yes",
+              "spos": "yes",
+              "constitutional_committee": "yes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gov-lifecycle",
+      "page": "governance",
+      "url": "https://cardano.nexus/governance#lifecycle",
+      "title": "From idea to enactment — the governance action lifecycle",
+      "summary": "Every action follows the same on-chain path; the governance layer is to track each step and keep the context attached to it.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "1. Propose",
+              "desc": "Submitted on-chain with a deposit and CIP-100/108 metadata."
+            },
+            {
+              "name": "2. Discuss",
+              "desc": "Community review; rationales and risk analysis gather."
+            },
+            {
+              "name": "3. Vote",
+              "desc": "DReps, SPOs and the CC cast votes across the epoch window."
+            },
+            {
+              "name": "4. Ratify",
+              "desc": "If the required thresholds are met, the action is ratified."
+            },
+            {
+              "name": "5. Enact",
+              "desc": "Applied in the next epoch; the deposit is returned."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gov-roadmap",
+      "page": "governance",
+      "url": "https://cardano.nexus/governance#roadmap",
+      "title": "Establishing a shared governance roadmap",
+      "summary": "Beyond tracking individual actions, the governance layer is to help the community propose, prioritise, track and remember governance priorities. It rolls out in five phases, mapped to the 4Cs.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Phase 1 — Connect",
+              "mode": "curious",
+              "desc": "Index DReps, SPOs and the Constitutional Committee. Mirror live governance actions with neutral, plain-language explainers."
+            },
+            {
+              "name": "Phase 2 — Understand",
+              "mode": "curious",
+              "desc": "Attach constitutional context, risk analysis, dependency maps and clear voting timelines to every action."
+            },
+            {
+              "name": "Phase 3 — Participate",
+              "mode": "constructive",
+              "desc": "Calm digests and 'what changed?' views, discussion spaces, and local governance groups — informed participation without the noise."
+            },
+            {
+              "name": "Phase 4 — Remember",
+              "mode": "caring",
+              "desc": "A durable rationale archive, voting history, and proposal-to-delivery evidence."
+            },
+            {
+              "name": "Phase 5 — Roadmap",
+              "mode": "chill",
+              "desc": "A community-curated, living governance roadmap: propose priorities, track progress across epochs, and open the schemas so anyone can build on the governance context graph."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gov-participants",
+      "page": "governance",
+      "url": "https://cardano.nexus/governance#participants",
+      "title": "Find the people of governance",
+      "summary": "Proposed profiles and directories for everyone shaping Cardano governance — discoverable, verifiable, and connected to their work.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "DReps",
+              "desc": "Profiles, stated principles, rationales and full voting history in one place."
+            },
+            {
+              "name": "Constitutional Committee",
+              "desc": "Members, constitutionality decisions, and the reasoning behind them."
+            },
+            {
+              "name": "Stake pool operators",
+              "desc": "Governance positions on the actions SPOs vote on, linked to their pools."
+            },
+            {
+              "name": "Proposers & experts",
+              "desc": "Authors, constitutional experts and reviewers who add context."
+            },
+            {
+              "name": "Local governance groups",
+              "desc": "Regional and language communities with their own governance views."
+            },
+            {
+              "name": "ADA holders",
+              "desc": "Delegators who want to understand before they delegate or vote."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gov-memory",
+      "page": "governance",
+      "url": "https://cardano.nexus/governance#memory",
+      "title": "Governance memory — so the ecosystem remembers",
+      "summary": "Governance loses its memory fastest of all — why a decision was made, what was promised, what was delivered. The governance layer is to preserve it as linked, verifiable context.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Rationale archive",
+              "desc": "Every DRep and CC rationale, kept and searchable — not lost to a timeline."
+            },
+            {
+              "name": "Voting history",
+              "desc": "How bodies and individuals voted over time, with the context that shaped it."
+            },
+            {
+              "name": "Proposal-to-delivery",
+              "desc": "Treasury actions linked to milestones and on-chain evidence of delivery."
+            },
+            {
+              "name": "Decision provenance",
+              "desc": "The debates and dependencies behind a decision, preserved for the future."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasury-overview",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal",
+      "title": "Treasury proposal at a glance (draft)",
+      "summary": "A Conway-era Treasury Withdrawal request to deliver the cardano.nexus MVP — open-source, forkable, with every milestone evidenced on-chain.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Requested",
+              "value": "₳350,000"
+            },
+            {
+              "name": "Duration",
+              "value": "~6 months"
+            },
+            {
+              "name": "Milestones",
+              "value": "4"
+            },
+            {
+              "name": "Action type",
+              "value": "Treasury Withdrawal"
+            },
+            {
+              "name": "Governance action ID",
+              "value": "TBD (not yet submitted)"
+            },
+            {
+              "name": "Ratified by",
+              "value": "DReps + Constitutional Committee"
+            },
+            {
+              "name": "Category",
+              "value": "Open Source / Ecosystem Public Good"
+            },
+            {
+              "name": "License",
+              "value": "Apache-2.0 · open data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasury-summary",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal#summary",
+      "title": "What the proposal funds",
+      "summary": "₳350,000 to deliver the Minimum Viable Version across four milestones over roughly six months: an open ecosystem directory, identity profiles, a DRep and SPO directory, a learning resource library, a contribution-needs board, verified links, basic trust signals, a community-submitted ecosystem map, and a public API. Delivered open-source (Apache-2.0) with open schemas; funds released milestone-by-milestone against published acceptance criteria, each completed milestone evidenced on-chain. Success test: can someone arrive at cardano.nexus and understand the Cardano ecosystem better than before?"
+    },
+    {
+      "id": "treasury-need",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal#need",
+      "title": "The problem it addresses",
+      "summary": "Cardano has the technical foundation — a public chain, native assets, wallets, identity primitives, governance, and a global community. What's missing is the human, social and contextual layer. Information is scattered across X, Discord, GitHub, forums, governance portals and meetups, and that fragmentation produces recurring, costly problems.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "People don't know who is building what"
+            },
+            {
+              "name": "Projects struggle to find collaborators"
+            },
+            {
+              "name": "Newcomers don't know where to start"
+            },
+            {
+              "name": "Governance participants lack shared context"
+            },
+            {
+              "name": "Builders repeat work because prior work is hard to find"
+            },
+            {
+              "name": "Trust is built socially but not represented clearly"
+            },
+            {
+              "name": "Good contributions disappear into timelines"
+            },
+            {
+              "name": "Ecosystem memory is weak; coordination relies on personal networks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasury-scope",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal#scope",
+      "title": "MVP scope by milestone",
+      "summary": "Scope is fixed and grouped into four delivery milestones.",
+      "groups": [
+        {
+          "items": [
+            {
+              "id": "m1",
+              "name": "M1 — Foundations",
+              "desc": "design system · identity · data model · infrastructure",
+              "covers": [
+                "Wallet sign-in & people / organisation profiles",
+                "Open data model & ecosystem schemas",
+                "Chain provider (Koios → Blockfrost failover)",
+                "Public repository & CI from day one"
+              ]
+            },
+            {
+              "id": "m2",
+              "name": "M2 — Directory & Context",
+              "desc": "discovery · the curious mode",
+              "covers": [
+                "Ecosystem project directory",
+                "Category & tag system",
+                "DRep directory & SPO directory",
+                "Community-submitted ecosystem map"
+              ]
+            },
+            {
+              "id": "m3",
+              "name": "M3 — Contribution & Trust",
+              "desc": "the constructive & caring modes",
+              "covers": [
+                "Project update feed",
+                "Contribution-needs / 'help wanted' board",
+                "Verified domain links",
+                "Simple trust & verification signals"
+              ]
+            },
+            {
+              "id": "m4",
+              "name": "M4 — API, Learning & Launch",
+              "desc": "portability · the chill mode · public beta",
+              "covers": [
+                "Public API & published open schemas",
+                "Learning resource library",
+                "Documentation & A2A AgentCard",
+                "Security review & public beta launch"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasury-budget",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal#budget",
+      "title": "Budget",
+      "summary": "Denominated in ADA and released against each milestone's published acceptance criteria. Amounts are the proposer's estimate for community review.",
+      "groups": [
+        {
+          "title": "By milestone",
+          "items": [
+            {
+              "name": "M1 Foundations",
+              "amount_ada": 90000,
+              "share": "26%",
+              "desc": "Design system, wallet sign-in & identity schemas, data model, chain-provider infra, public repo."
+            },
+            {
+              "name": "M2 Directory & Context",
+              "amount_ada": 110000,
+              "share": "31%",
+              "desc": "Project / people / org profiles, categories & tags, DRep + SPO directories, community ecosystem map."
+            },
+            {
+              "name": "M3 Contribution & Trust",
+              "amount_ada": 90000,
+              "share": "26%",
+              "desc": "Update feed, contribution-needs board, verified domain links, trust & verification signals."
+            },
+            {
+              "name": "M4 API, Learning & Launch",
+              "amount_ada": 60000,
+              "share": "17%",
+              "desc": "Public API + open schemas, learning library, docs & AgentCard, security review, public beta."
+            },
+            {
+              "name": "Total requested",
+              "amount_ada": 350000,
+              "share": "100%"
+            }
+          ]
+        },
+        {
+          "title": "By category",
+          "items": [
+            {
+              "name": "Engineering — frontend, backend, API, data",
+              "amount_ada": 210000,
+              "share": "60%"
+            },
+            {
+              "name": "Design & UX",
+              "amount_ada": 35000,
+              "share": "10%"
+            },
+            {
+              "name": "Project management & governance reporting",
+              "amount_ada": 35000,
+              "share": "10%"
+            },
+            {
+              "name": "Infrastructure & hosting (12 months)",
+              "amount_ada": 28000,
+              "share": "8%"
+            },
+            {
+              "name": "Security review",
+              "amount_ada": 17500,
+              "share": "5%"
+            },
+            {
+              "name": "Contingency",
+              "amount_ada": 24500,
+              "share": "7%"
+            },
+            {
+              "name": "Total",
+              "amount_ada": 350000,
+              "share": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasury-milestones",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal#milestones",
+      "title": "Milestones & timeline",
+      "summary": "Each milestone has explicit acceptance criteria. Funds are released only on verified completion, and completion is anchored on-chain as proposal-to-delivery evidence.",
+      "groups": [
+        {
+          "items": [
+            {
+              "id": "m1",
+              "name": "M1 — Foundations",
+              "months": "1–2",
+              "amount_ada": 90000,
+              "desc": "Public repo live; design system shipped; wallet sign-in and profile/identity schemas working on mainnet; chain provider operational with failover.",
+              "acceptance": "A user can sign in with a wallet and create a verified profile."
+            },
+            {
+              "id": "m2",
+              "name": "M2 — Directory & Context",
+              "months": "2–4",
+              "amount_ada": 110000,
+              "desc": "Project / org directory, categories & tags, DRep and SPO directories, and the community-submitted ecosystem map are live and seeded with public data.",
+              "acceptance": "≥250 profiles and a browsable ecosystem map."
+            },
+            {
+              "id": "m3",
+              "name": "M3 — Contribution & Trust",
+              "months": "4–5",
+              "amount_ada": 90000,
+              "desc": "Update feed, contribution-needs board, verified domain links, and basic trust signals shipped.",
+              "acceptance": "Projects can post needs and verify a domain; trust signals render on profiles."
+            },
+            {
+              "id": "m4",
+              "name": "M4 — API, Learning & Launch",
+              "months": "5–6",
+              "amount_ada": 60000,
+              "desc": "Public API and open schemas published; learning library and docs live; A2A AgentCard served; security review complete; public beta launched.",
+              "acceptance": "Third parties can query the open API; public beta is live."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasury-metrics",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal#metrics",
+      "title": "Success metrics",
+      "summary": "Measured at public beta (end of M4) and reported for 6 months after.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "250+ projects & organisations indexed at launch"
+            },
+            {
+              "name": "100% open-source, forkable, open schemas published"
+            },
+            {
+              "name": "100% of milestones evidenced on-chain"
+            },
+            {
+              "name": "1,000+ monthly active users within 3 months of beta"
+            },
+            {
+              "name": "99.5% public API availability target"
+            },
+            {
+              "name": "No gatekeeping — permissionless participation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasury-alignment",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal#alignment",
+      "title": "Constitutional alignment — why it fits Cardano",
+      "summary": "cardano.nexus inherits the values of Cardano itself and respects the constitutional guardrails for treasury spend.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Public good, not private capture",
+              "desc": "Open-source and open-data; no single operator can own the ecosystem's shared context."
+            },
+            {
+              "name": "Neutral & permissionless",
+              "desc": "Does not favour any project, sell visibility, or decide who belongs."
+            },
+            {
+              "name": "Strengthens governance",
+              "desc": "Gives DReps and ADA holders shared context — without telling anyone how to vote."
+            },
+            {
+              "name": "Accountable spend",
+              "desc": "Milestone-gated release, on-chain delivery evidence, full public reporting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasury-risks",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal#risks",
+      "title": "Risks & mitigations",
+      "summary": "Key delivery risks and how the proposal mitigates them.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Scope creep",
+              "desc": "Fixed MVP scope with milestone gating; out-of-scope ideas are logged for a future round, not added mid-delivery."
+            },
+            {
+              "name": "Low adoption",
+              "desc": "A directory is only useful if populated; seed with existing public data and partner with active communities before launch."
+            },
+            {
+              "name": "Centralisation drift",
+              "desc": "A connection layer could become a chokepoint; open schemas, forkability, and a path to progressive decentralisation."
+            },
+            {
+              "name": "Key-person / delivery risk",
+              "desc": "Dependence on a small team; open-source from day one, documented build, milestone-based payment so unspent funds are returnable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasury-ask",
+      "page": "treasury-proposal",
+      "url": "https://cardano.nexus/treasury-proposal#ask",
+      "title": "The ask",
+      "summary": "₳350,000 from the Cardano Treasury via a Treasury Withdrawal governance action, released across four milestones to a community-controlled multisig, with all deliverables open-source and each milestone's completion evidenced on-chain. A refundable governance-action deposit (protocol parameter) is locked on submission and returned to the stake address on enactment or expiry. Figures, addresses and the governance action ID are placeholders to be finalised before submission; this is a draft for community review, not financial or legal advice.",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Receiving address",
+              "value": "TBD — milestone multisig"
+            },
+            {
+              "name": "Return / deposit address",
+              "value": "TBD — stake address"
+            },
+            {
+              "name": "Metadata anchor",
+              "value": "TBD — planned at https://cardano.nexus/governance/mvp-proposal.jsonld"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
