@@ -9,7 +9,7 @@ Version 1.0.0 · updated 2026-11-27
 - [llms.txt](https://cardano.nexus/llms.txt): this short map
 - [llms-full.txt](https://cardano.nexus/llms-full.txt): all content in one plain-text file
 - [data/index.json](https://cardano.nexus/data/index.json): structured source of truth (schema: https://cardano.nexus/data/index.schema.json)
-- [.well-known/agent.json](https://cardano.nexus/.well-known/agent.json): A2A AgentCard
+- [.well-known/agent.json](https://cardano.nexus/.well-known/agent.json): A2N (agent to nexus) AgentCard — A2A-compatible
 - [SKILL.md](https://cardano.nexus/SKILL.md): agent skill — how to use and answer from these files
 
 ## Guidance for agents
@@ -164,7 +164,7 @@ Ecosystems forget — who contributed, why decisions were made, what was already
 
 URL: https://cardano.nexus/#agents
 
-cardano.nexus proposes to expose its Verified Context Graph to agents through an open A2A Protocol AgentCard, so agents assist the ecosystem instead of guessing about it. Read access is permissionless; agents assist discovery but never decide who belongs or how to vote. The five graph-backed skills below are planned for the MVP — today the agent files describe the proposal itself.
+cardano.nexus proposes to expose its Verified Context Graph to agents through A2N (agent to nexus): an open AgentCard, compatible with the A2A standard, so agents assist the ecosystem instead of guessing about it. Read access is permissionless; agents assist discovery but never decide who belongs or how to vote. The five graph-backed skills below are planned for the MVP — today the agent files describe the proposal itself.
 
 ### Planned agent skills
 
@@ -396,7 +396,7 @@ Scope is fixed and grouped into four delivery milestones.
 - M4 — API, Learning & Launch — portability · the chill mode · public beta
   - Public API & published open schemas
   - Learning resource library
-  - Documentation & A2A AgentCard
+  - Documentation & A2N AgentCard
   - Security review & public beta launch
 
 ## Budget
@@ -435,7 +435,7 @@ Each milestone has explicit acceptance criteria. Funds are released only on veri
   - Acceptance: ≥250 profiles and a browsable ecosystem map.
 - M3 — Contribution & Trust (months 4–5 · ₳90,000) — Update feed, contribution-needs board, verified domain links, and basic trust signals shipped.
   - Acceptance: Projects can post needs and verify a domain; trust signals render on profiles.
-- M4 — API, Learning & Launch (months 5–6 · ₳60,000) — Public API and open schemas published; learning library and docs live; A2A AgentCard served; security review complete; public beta launched.
+- M4 — API, Learning & Launch (months 5–6 · ₳60,000) — Public API and open schemas published; learning library and docs live; A2N (agent to nexus) AgentCard served; security review complete; public beta launched.
   - Acceptance: Third parties can query the open API; public beta is live.
 
 ## Success metrics

@@ -11,7 +11,7 @@ Version 1.0.0 · updated 2026-11-27
 - [llms.txt](https://cardano.nexus/llms.txt): this short map
 - [llms-full.txt](https://cardano.nexus/llms-full.txt): all content in one plain-text file
 - [data/index.json](https://cardano.nexus/data/index.json): structured source of truth (schema: https://cardano.nexus/data/index.schema.json)
-- [.well-known/agent.json](https://cardano.nexus/.well-known/agent.json): A2A AgentCard
+- [.well-known/agent.json](https://cardano.nexus/.well-known/agent.json): A2N (agent to nexus) AgentCard — A2A-compatible
 - [SKILL.md](https://cardano.nexus/SKILL.md): agent skill — how to use and answer from these files
 
 ## Pages

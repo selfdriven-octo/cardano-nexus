@@ -1,7 +1,7 @@
 {
   "protocolVersion": "0.3.0",
   "name": "cardano.nexus",
-  "description": "A decentralised, permissionless connection layer for the Cardano ecosystem — an open community proposal grounded in the 4Cs (Curious · Caring · Constructive · Chill). This card describes the proposal as published today: plain-text and JSON files an agent can read (llms.txt, llms-full.txt, data/index.json). The platform and its Verified Context Graph are not live yet; skills marked 'Planned' arrive with the MVP. Read access is permissionless.",
+  "description": "A decentralised, permissionless connection layer for the Cardano ecosystem — an open community proposal grounded in the 4Cs (Curious · Caring · Constructive · Chill). This A2N (agent to nexus) card uses the A2A AgentCard format and describes the proposal as published today: plain-text and JSON files an agent can read (llms.txt, llms-full.txt, data/index.json). The platform and its Verified Context Graph are not live yet; skills marked 'Planned' arrive with the MVP. Read access is permissionless.",
   "url": "https://cardano.nexus/",
   "version": "1.0.0",
   "provider": {

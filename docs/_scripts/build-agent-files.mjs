@@ -114,7 +114,7 @@ const endpointLines = [
   `- [llms.txt](${ep.llms}): this short map`,
   `- [llms-full.txt](${ep.llms_full}): all content in one plain-text file`,
   `- [data/index.json](${ep.index}): structured source of truth (schema: ${ep.schema})`,
-  `- [.well-known/agent.json](${ep.agent_card}): A2A AgentCard`,
+  `- [.well-known/agent.json](${ep.agent_card}): A2N (agent to nexus) AgentCard — A2A-compatible`,
   `- [SKILL.md](${ep.skill}): agent skill — how to use and answer from these files`,
 ];
 

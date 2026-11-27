@@ -470,7 +470,7 @@
       "page": "home",
       "url": "https://cardano.nexus/#agents",
       "title": "An open substrate for AI agents",
-      "summary": "cardano.nexus proposes to expose its Verified Context Graph to agents through an open A2A Protocol AgentCard, so agents assist the ecosystem instead of guessing about it. Read access is permissionless; agents assist discovery but never decide who belongs or how to vote. The five graph-backed skills below are planned for the MVP — today the agent files describe the proposal itself.",
+      "summary": "cardano.nexus proposes to expose its Verified Context Graph to agents through A2N (agent to nexus): an open AgentCard, compatible with the A2A standard, so agents assist the ecosystem instead of guessing about it. Read access is permissionless; agents assist discovery but never decide who belongs or how to vote. The five graph-backed skills below are planned for the MVP — today the agent files describe the proposal itself.",
       "groups": [
         {
           "title": "Planned agent skills",
@@ -1059,7 +1059,7 @@
               "covers": [
                 "Public API & published open schemas",
                 "Learning resource library",
-                "Documentation & A2A AgentCard",
+                "Documentation & A2N AgentCard",
                 "Security review & public beta launch"
               ]
             }
@@ -1188,7 +1188,7 @@
               "name": "M4 — API, Learning & Launch",
               "months": "5–6",
               "amount_ada": 60000,
-              "desc": "Public API and open schemas published; learning library and docs live; A2A AgentCard served; security review complete; public beta launched.",
+              "desc": "Public API and open schemas published; learning library and docs live; A2N (agent to nexus) AgentCard served; security review complete; public beta launched.",
               "acceptance": "Third parties can query the open API; public beta is live."
             }
           ]

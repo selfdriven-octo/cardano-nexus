@@ -19,7 +19,7 @@ Fetch these instead of the HTML pages:
 | `https://cardano.nexus/llms.txt` | Short map. Fetch this first. |
 | `https://cardano.nexus/llms-full.txt` | All content from the three pages in one plain-text file. |
 | `https://cardano.nexus/data/index.json` | Structured source of truth. Schema: `/data/index.schema.json`. |
-| `https://cardano.nexus/.well-known/agent.json` | A2A AgentCard for discovery. |
+| `https://cardano.nexus/.well-known/agent.json` | A2N (agent to nexus) AgentCard for discovery. Uses the A2A AgentCard format, so standard A2A clients can read it. |
 | `https://cardano.nexus/SKILL.md` | This file. |
 
 Human pages, each with `#<anchor>` links per section:

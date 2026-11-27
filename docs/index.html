@@ -312,10 +312,13 @@ footer{border-top:1px solid var(--border);padding:60px 0 40px;background:var(--s
 .term-bar .t{margin-left:8px;font-family:'Switzer',sans-serif;font-size:11.5px;color:var(--muted)}
 .term pre{margin:0;padding:20px;font-family:'Switzer',sans-serif;font-size:12.5px;line-height:1.75;overflow-x:auto;color:var(--muted)}
 .term .k{color:var(--cardano-bright)}.term .s{color:var(--constructive)}.term .b{color:var(--curious)}.term .p{color:var(--muted2)}
-.agent-files{background:var(--bg);border:1px solid var(--border2);border-radius:14px;overflow:hidden;margin:0 0 36px;max-width:680px}
+.agent-access{text-align:center;padding:90px 0 100px}
+.agent-access-in{max-width:760px;margin:0 auto;padding:0 28px}
+.agent-access p{font-size:17px;color:var(--muted);margin:0 auto 30px;max-width:560px}
+.agent-files{background:#04070f;border:1px solid var(--border2);border-radius:16px;overflow:hidden;margin:0 auto;max-width:680px;text-align:left;box-shadow:0 28px 64px rgba(0,0,0,.45)}
 .af-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 18px;border-bottom:1px solid var(--border)}
 .af-head h4{font-family:'Switzer',sans-serif;font-size:14px;font-weight:700;letter-spacing:.01em}
-.af-copy{background:var(--text);color:var(--bg);border:0;border-radius:9px;padding:8px 15px;font-family:'Switzer',sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:transform .2s,background .2s}
+.af-copy{background:var(--text);color:var(--bg);border:0;border-radius:9px;padding:8px 15px;font-family:'Switzer',sans-serif;font-size:13px;font-weight:700;white-space:nowrap;cursor:pointer;transition:transform .2s,background .2s}
 .af-copy:hover{transform:translateY(-1px);background:#fff}
 .af-copy.done{background:var(--constructive)}
 .af-list{padding:6px 0}
@@ -620,7 +623,7 @@ footer{border-top:1px solid var(--border);padding:60px 0 40px;background:var(--s
     <div class="sec-head reveal">
       <div class="eyebrow">// Built for the age of intelligence</div>
       <h2>An open substrate for <span class="grad">AI agents</span></h2>
-      <p>AI increasingly shapes how people discover, summarise and act on information. Without high-quality ecosystem context, AI gives shallow or inaccurate answers about Cardano. cardano.nexus exposes its Verified Context Graph to agents through an open <strong style="color:var(--text)">A2A Protocol AgentCard</strong> — so agents assist the ecosystem instead of guessing about it.</p>
+      <p>AI increasingly shapes how people discover, summarise and act on information. Without high-quality ecosystem context, AI gives shallow or inaccurate answers about Cardano. cardano.nexus exposes its Verified Context Graph to agents through <strong style="color:var(--text)">A2N — agent to nexus</strong>: an open AgentCard, compatible with the A2A standard, so agents assist the ecosystem instead of guessing about it.</p>
     </div>
 
     <!-- handshake flow -->
@@ -638,7 +641,7 @@ footer{border-top:1px solid var(--border);padding:60px 0 40px;background:var(--s
       <div class="flow-node hub">
         <div class="fi" id="flowLogo"></div>
         <h4>cardano.nexus</h4>
-        <p>A2A endpoint</p>
+        <p>A2N endpoint</p>
       </div>
       <div class="flow-link">
         <span class="lbl top">invoke skill →</span>
@@ -798,6 +801,27 @@ footer{border-top:1px solid var(--border);padding:60px 0 40px;background:var(--s
   </div>
 </section>
 
+<!-- FOR YOUR AGENT -->
+<section class="agent-access band-line" id="for-your-agent">
+  <div class="agent-access-in reveal">
+    <div class="eyebrow" style="justify-content:center">// For your agent</div>
+    <p>This site is also published as plain text and JSON. Point your AI agent here instead of the HTML.</p>
+    <div class="agent-files" id="agent-files">
+      <div class="af-head">
+        <h4>cardano.nexus, machine-readable</h4>
+        <button type="button" class="af-copy" id="afCopy">Copy a prompt</button>
+      </div>
+      <div class="af-list">
+        <a class="af-row" href="/llms.txt"><span><span class="d">$</span>curl cardano.nexus/<b>llms.txt</b></span><span class="lbl">short map</span></a>
+        <a class="af-row" href="/llms-full.txt"><span><span class="d">$</span>curl cardano.nexus/<b>llms-full.txt</b></span><span class="lbl">everything</span></a>
+        <a class="af-row" href="/data/index.json"><span><span class="d">$</span>curl cardano.nexus/<b>data/index.json</b></span><span class="lbl">structured</span></a>
+        <a class="af-row" href="/.well-known/agent.json"><span><span class="d">$</span>curl cardano.nexus/<b>.well-known/agent.json</b></span><span class="lbl">A2N card</span></a>
+        <a class="af-row" href="/SKILL.md"><span><span class="d">$</span>curl cardano.nexus/<b>SKILL.md</b></span><span class="lbl">agent skill</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="wrap">
@@ -826,21 +850,6 @@ footer{border-top:1px solid var(--border);padding:60px 0 40px;background:var(--s
         <a href="#top">Back to top</a>
       </div>
     </div>
-    <!-- agent files: machine-readable cardano.nexus site -->
-    <div class="agent-files" id="agent-files">
-      <div class="af-head">
-        <h4>For your agent</h4>
-        <button type="button" class="af-copy" id="afCopy">Copy a prompt</button>
-      </div>
-      <div class="af-list">
-        <a class="af-row" href="/llms.txt"><span><span class="d">$</span>curl cardano.nexus/<b>llms.txt</b></span><span class="lbl">short map</span></a>
-        <a class="af-row" href="/llms-full.txt"><span><span class="d">$</span>curl cardano.nexus/<b>llms-full.txt</b></span><span class="lbl">everything</span></a>
-        <a class="af-row" href="/data/index.json"><span><span class="d">$</span>curl cardano.nexus/<b>data/index.json</b></span><span class="lbl">structured</span></a>
-        <a class="af-row" href="/.well-known/agent.json"><span><span class="d">$</span>curl cardano.nexus/<b>.well-known/agent.json</b></span><span class="lbl">A2A card</span></a>
-        <a class="af-row" href="/SKILL.md"><span><span class="d">$</span>curl cardano.nexus/<b>SKILL.md</b></span><span class="lbl">agent skill</span></a>
-      </div>
-    </div>
-
     <div class="foot-bot">
       <span>cardano.nexus · an open community proposal · grounded in the 4Cs</span>
       <a href="https://selfdriven.you" class="fourc" title="The 4Cs · selfdriven.you" style="display:inline-flex;gap:6px;align-items:center">
